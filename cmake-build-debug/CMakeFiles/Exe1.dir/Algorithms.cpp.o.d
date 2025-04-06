@@ -156,4 +156,12 @@ CMakeFiles/Exe1.dir/Algorithms.cpp.o: \
  /usr/include/c++/14/bits/basic_ios.tcc \
  /usr/include/c++/14/bits/ostream.tcc /usr/include/c++/14/istream \
  /usr/include/c++/14/bits/istream.tcc \
- /home/eden/Downloads/Exe1/structures.h
+ /home/eden/Downloads/Exe1/structures.h /usr/include/c++/14/climits \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h

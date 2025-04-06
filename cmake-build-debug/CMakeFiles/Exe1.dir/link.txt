@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/Exe1.dir/main.cpp.o CMakeFiles/Exe1.dir/Graph.cpp.o CMakeFiles/Exe1.dir/structures.cpp.o CMakeFiles/Exe1.dir/Algorithms.cpp.o -o Exe1
+/usr/bin/c++ -g CMakeFiles/Exe1.dir/main.cpp.o CMakeFiles/Exe1.dir/Graph.cpp.o CMakeFiles/Exe1.dir/structures.cpp.o CMakeFiles/Exe1.dir/Algorithms.cpp.o CMakeFiles/Exe1.dir/AlgoTest.cpp.o CMakeFiles/Exe1.dir/GraphTest.cpp.o CMakeFiles/Exe1.dir/StructTest.cpp.o -o Exe1

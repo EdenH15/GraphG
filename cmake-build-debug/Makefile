@@ -129,6 +129,30 @@ Exe1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exe1.dir/build.make CMakeFiles/Exe1.dir/build
 .PHONY : Exe1/fast
 
+AlgoTest.o: AlgoTest.cpp.o
+.PHONY : AlgoTest.o
+
+# target to build an object file
+AlgoTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exe1.dir/build.make CMakeFiles/Exe1.dir/AlgoTest.cpp.o
+.PHONY : AlgoTest.cpp.o
+
+AlgoTest.i: AlgoTest.cpp.i
+.PHONY : AlgoTest.i
+
+# target to preprocess a source file
+AlgoTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exe1.dir/build.make CMakeFiles/Exe1.dir/AlgoTest.cpp.i
+.PHONY : AlgoTest.cpp.i
+
+AlgoTest.s: AlgoTest.cpp.s
+.PHONY : AlgoTest.s
+
+# target to generate assembly for a file
+AlgoTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exe1.dir/build.make CMakeFiles/Exe1.dir/AlgoTest.cpp.s
+.PHONY : AlgoTest.cpp.s
+
 Algorithms.o: Algorithms.cpp.o
 .PHONY : Algorithms.o
 
@@ -176,6 +200,54 @@ Graph.s: Graph.cpp.s
 Graph.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exe1.dir/build.make CMakeFiles/Exe1.dir/Graph.cpp.s
 .PHONY : Graph.cpp.s
+
+GraphTest.o: GraphTest.cpp.o
+.PHONY : GraphTest.o
+
+# target to build an object file
+GraphTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exe1.dir/build.make CMakeFiles/Exe1.dir/GraphTest.cpp.o
+.PHONY : GraphTest.cpp.o
+
+GraphTest.i: GraphTest.cpp.i
+.PHONY : GraphTest.i
+
+# target to preprocess a source file
+GraphTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exe1.dir/build.make CMakeFiles/Exe1.dir/GraphTest.cpp.i
+.PHONY : GraphTest.cpp.i
+
+GraphTest.s: GraphTest.cpp.s
+.PHONY : GraphTest.s
+
+# target to generate assembly for a file
+GraphTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exe1.dir/build.make CMakeFiles/Exe1.dir/GraphTest.cpp.s
+.PHONY : GraphTest.cpp.s
+
+StructTest.o: StructTest.cpp.o
+.PHONY : StructTest.o
+
+# target to build an object file
+StructTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exe1.dir/build.make CMakeFiles/Exe1.dir/StructTest.cpp.o
+.PHONY : StructTest.cpp.o
+
+StructTest.i: StructTest.cpp.i
+.PHONY : StructTest.i
+
+# target to preprocess a source file
+StructTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exe1.dir/build.make CMakeFiles/Exe1.dir/StructTest.cpp.i
+.PHONY : StructTest.cpp.i
+
+StructTest.s: StructTest.cpp.s
+.PHONY : StructTest.s
+
+# target to generate assembly for a file
+StructTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exe1.dir/build.make CMakeFiles/Exe1.dir/StructTest.cpp.s
+.PHONY : StructTest.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -234,12 +306,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Exe1"
+	@echo "... AlgoTest.o"
+	@echo "... AlgoTest.i"
+	@echo "... AlgoTest.s"
 	@echo "... Algorithms.o"
 	@echo "... Algorithms.i"
 	@echo "... Algorithms.s"
 	@echo "... Graph.o"
 	@echo "... Graph.i"
 	@echo "... Graph.s"
+	@echo "... GraphTest.o"
+	@echo "... GraphTest.i"
+	@echo "... GraphTest.s"
+	@echo "... StructTest.o"
+	@echo "... StructTest.i"
+	@echo "... StructTest.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
