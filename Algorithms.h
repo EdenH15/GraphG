@@ -7,7 +7,7 @@
 #define ALGORITHMS_H
 #include "Graph.h"
 #include "structures.h"
-#include <iostream>
+
 
 
 namespace graph {
@@ -29,4 +29,4 @@ namespace graph {
     };
 }
 
-#endif //ALGORITHMS_H
+#endif

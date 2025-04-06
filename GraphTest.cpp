@@ -4,9 +4,7 @@
 
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include "doctest.h"
-#include "Algorithms.h"
 #include "Graph.h"
-#include "structures.h"
 #include <stdexcept>
 
 using namespace graph;

@@ -10,6 +10,7 @@
 using namespace std;
 
 namespace graph {
+
     Graph Algorithms::bfs(const Graph &g, int srcVertex) {
         const int numVertices = g.get_numV();
         if (numVertices == 0) {
@@ -46,7 +47,7 @@ namespace graph {
         return bfsTree;
     }
 
-
+    // Recursive DFS helper function
     void Algorithms::recDfs(Graph &g, int srcVertex, Graph &dfsTree, bool *visited) {
         visited[srcVertex] = true;
         Neighbor *neighbors = g.getNeighbors(srcVertex);
@@ -71,8 +72,10 @@ namespace graph {
         bool *visited = new bool[numVertices]();
         Graph dfsTree(numVertices);
 
+        // Start DFS from the source vertex and recursively visit unvisited vertices
         recDfs(g, srcVertex, dfsTree, visited);
         for (int i = 0; i < numVertices; i++) {
+            // Ensure all vertices are visited
             if (!visited[i]) {
                 recDfs(g, i, dfsTree, visited);
             }
@@ -89,7 +92,7 @@ namespace graph {
         if (srcVertex < 0 || srcVertex >= numV) {
             throw std::out_of_range("Invalid source vertex: out of bounds.");
         }
-        const int INF = INT_MAX;
+        const int INF = INT_MAX; //Infinity value for unvisited vertices
         Graph dijkstraTree(numV);
 
         int *d = new int[numV];
@@ -118,6 +121,7 @@ namespace graph {
                 int weight = neighbors->weight;
                 relax(u, vertex, weight, d, minHeap, parent);
                 neighbors = neighbors->next;
+                // Handle negative weight
                 if (weight < 0) {
                     cout << "Negative weight detected!" << endl;
                     delete[] d;
@@ -138,6 +142,7 @@ namespace graph {
         return dijkstraTree;
     }
 
+    // Relaxation for Dijkstra's algorithm
     void Algorithms::relax(int u, int vertex, int weight, int *d, minHeap &pq, int *parent) {
         if (d[u] + weight < d[vertex]) {
             d[vertex] = d[u] + weight;

@@ -8,6 +8,8 @@ using namespace std;
 #include <iostream>
 
 namespace graph {
+
+    // Constructor for Graph: Initializes the graph with a given number of vertices
     Graph::Graph(int vertices) {
         if (vertices < 0) {
             throw std::invalid_argument("vertices must be greater than zero");
@@ -16,7 +18,7 @@ namespace graph {
         adjacencyList = new Neighbor *[vertices]();
     }
 
-
+    // Destructor: Frees all dynamically allocated memory for the adjacency list
     Graph::~Graph() {
         for (int i = 0; i < numV; i++) {
             Neighbor *current = adjacencyList[i];
@@ -30,6 +32,7 @@ namespace graph {
         delete[] adjacencyList;
     }
 
+    // Adds an edge to the graph (undirected edge)
     void Graph::addEdge(int src, int dst, int weight) {
         if (numV == 0) {
             throw std::runtime_error("Cannot add edge to empty graph.");
@@ -42,9 +45,10 @@ namespace graph {
         }
         addNeighbor(src, dst, weight);
         addNeighbor(dst, src, weight);
-        printf("The edge added\n");
+        cout << "The edge added\n" << endl;
     }
 
+    // Checks if an edge exists between two vertices
     bool Graph::edgeExists(const int src, const int dst) const {
         const Neighbor *current = adjacencyList[src];
         while (current) {
@@ -56,6 +60,7 @@ namespace graph {
         return false;
     }
 
+    // Adds an edge to the graph (directed edge)
     void Graph::addNeighbor(int src, int dst, int weight) {
         if (src < 0 || dst < 0 || src >= numV || dst >= numV) {
             throw std::invalid_argument("Invalid vertex index in addNeighbor");
@@ -73,6 +78,7 @@ namespace graph {
         removeEdgeOneWay(dst, src);
     }
 
+    // Removes an edge in one direction
     void Graph::removeEdgeOneWay(int src, int dst) {
         if (!edgeExists(src, dst)) {
             throw std::runtime_error("Error:Edge not exists");

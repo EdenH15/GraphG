@@ -5,7 +5,7 @@
 #ifndef QUEUE_H
 #define QUEUE_H
 #define MAX_SIZE 100
-#include <iostream>
+
 
 namespace graph {
     class Queue {
@@ -57,4 +57,4 @@ namespace graph {
     };
 }
 
-#endif // QUEUE_H
+#endif

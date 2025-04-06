@@ -3,7 +3,7 @@
 #include <iostream>
 #include "Graph.h"
 #include "Algorithms.h"
-#include "structures.h"
+
 using namespace graph;
 using namespace std;
 

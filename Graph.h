@@ -4,7 +4,7 @@
 
 #ifndef GRAPH_H
 #define GRAPH_H
-#include <iostream>
+
 
 namespace graph {
     struct Neighbor {
@@ -39,7 +39,6 @@ namespace graph {
 
         void print_graph() const;
 
-        // void releaseMemory();
     };
 }
 

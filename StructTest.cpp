@@ -3,10 +3,8 @@
 // Email:Edenhassin@gmail.com
 
 #include "doctest.h"
-#include "Algorithms.h"
-#include "Graph.h"
 #include "structures.h"
-#include <stdexcept>
+
 
 using namespace graph;
 using namespace std;
