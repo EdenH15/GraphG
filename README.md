@@ -19,7 +19,7 @@ data structures, and the graph implementation.
 
 ---
 
-# Algorithm Demonstrator-main.cpp
+## Algorithm Demonstrator-main.cpp
 This file contains example runs of all the graph algorithms implemented in the project.
 It's used to showcase how each algorithm behaves on sample graphs.
 
@@ -53,7 +53,7 @@ make valgrind
 - STL containers are intentionally not used.
 - Designed to run on Linux environments (Ubuntu).
 
-# 👩‍💻 Author
+#### 👩‍💻 Author
 - Eden Hassin
 - Edenhassin@gmail.com
 - Project completed: March–April 2025
