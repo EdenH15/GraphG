@@ -21,29 +21,35 @@ int main() {
     g.addEdge(3,5,5);
     g.addEdge(4,5,2);
 
-    cout << "original graph:\n" << endl;
+    cout << "original graph:" << endl;
     g.print_graph();
 
 
+
     Graph bfsTree= Algorithms::bfs(g,0);
-    cout << "after bfs\n" << endl;
+    cout << "after bfs" << endl;
     bfsTree.print_graph();
 
+
     Graph dfsTree= Algorithms::dfs(g,0);
-    cout << "after dfs\n" << endl;
+    cout << "after dfs" << endl;
     dfsTree.print_graph();
 
+
     Graph dTree=Algorithms::dijkstra(g,0);
-    cout << "after dijkstra:\n" << endl;
+    cout << "after dijkstra:" << endl;
     dTree.print_graph();
 
+
     Graph prim=Algorithms::prim(g);
-    cout << "after prim:\n" << endl;
+    cout << "after prim:" << endl;
     prim.print_graph();
 
+
     Graph kruskalTree=Algorithms::kruskal(g);
-    cout << "after kruskal:\n" << endl;
+    cout << "after kruskal:" << endl;
     kruskalTree.print_graph();
+
 
 
     return 0;

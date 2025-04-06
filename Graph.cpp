@@ -45,7 +45,6 @@ namespace graph {
         }
         addNeighbor(src, dst, weight);
         addNeighbor(dst, src, weight);
-        cout << "The edge added\n" << endl;
     }
 
     // Checks if an edge exists between two vertices
@@ -118,8 +117,9 @@ namespace graph {
                 cout << "<v:" << current->vertex << ",w:" << current->weight << "> ";
                 current = current->next;
             }
-            cout << endl;
+            cout <<endl;
         }
+        cout <<"\n"<< endl;
     }
 
     int Graph::get_numV() const {
