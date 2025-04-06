@@ -34,8 +34,8 @@ Tests are located in:
 - `StructTest.cpp`
 - `GraphTest.cpp`
 
-Run the tests with:
-make test
+### Run the tests with:
+ make test
 
 
 ### 🔨 Compile the project
