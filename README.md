@@ -38,13 +38,13 @@ Run the tests with:
 make test
 
 
-# 🔨 Compile the project
+### 🔨 Compile the project
 make Main
 
-# ▶️ Run the main program (executes all algorithms)
+### ▶️ Run the main program (executes all algorithms)
 ./main
 
-# 🧼 Check for memory leaks
+### 🧼 Check for memory leaks
 make valgrind
 
 
